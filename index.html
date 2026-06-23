@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>20 20 Bakers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+    <h1>20 20 Bakers</h1>
+    <p>Sweets • Samosa • Cold Drinks</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#order">Order</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section>
+    <h2>Our Special Items</h2>
+    <p>✔ Fresh Samosa</p>
+    <p>✔ Rasgulla</p>
+    <p>✔ Birthday Cakes</p>
+    <p>✔ Cold Drinks</p>
+    
+    
+    
+</section>
+<section id="order">
+    <h2>Place Your Order</h2>
+
+    <input type="text" id="name" placeholder="Your Name"><br><br>
+    <input type="text" id="village" placeholder="location"><br><br>
+    <input type="number" name="customer contact number" id="number" placeholder="enter your number">
+
+
+    <table border="1" style="margin:auto;">
+        <tr>
+            <th>Select</th>
+            <th>Item</th>
+            <th>Price (₹)</th>
+            <th>Qty</th>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" value="Samosa" data-price="10"></td>
+            <td>Samosa</td>
+            <td>10</td>
+            <td><input type="number" min="0" value="0"></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" value="Rasgulla" data-price="20"></td>
+            <td>Rasgulla</td>
+            <td>20</td>
+            <td><input type="number" min="0" value="0"></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" value="Pakoda" data-price="15"></td>
+            <td>Pakoda</td>
+            <td>15</td>
+            <td><input type="number" min="0" value="0"></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" value="Namkeen" data-price="30"></td>
+            <td>Namkeen</td>
+            <td>30</td>
+            <td><input type="number" min="0" value="0"></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" value="Curd" data-price="40"></td>
+            <td>Curd (Dahi)</td>
+            <td>40</td>
+            <td><input type="number" min="0" value="0"></td>
+        </tr>
+    </table>
+
+    <br>
+    <h3>Total: ₹ <span id="total">0</span></h3>
+
+    <button onclick="calculateTotal()">Calculate Total</button>
+    <button onclick="sendOrder()">Order on WhatsApp</button>
+</section>
+
+
+
+<br>
+
+    
+
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>📍location:Gorakhpur</p>
+    <p>📞 9161467834</p>
+</section>
+
+<footer>
+    <p>© 2026 20 20 Bakers</p>
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
